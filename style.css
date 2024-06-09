@@ -409,6 +409,8 @@ header::before {
 
 .quotes-section h2{
   font-size: 28px;
+  line-height: 3;
+
 }
 
 }
@@ -444,4 +446,16 @@ header::before {
     font-size: 28px;
   }
   
+  .message-container h2{
+    font-size: 28px;
+    line-height: 3;
+  }
+
+  .message-container p {
+    font-size: 14px;
+  }
+
+  .message-container :nth-child(3){
+    font-size: 14px;
+  }
 }

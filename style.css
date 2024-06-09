@@ -323,6 +323,8 @@ header::before {
 .contact-form textarea {
   padding: 10px;
   font-size: 16px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 100%;

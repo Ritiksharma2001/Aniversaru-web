@@ -267,6 +267,11 @@ header::before {
   background-color: #fff;
 }
 
+.moving-quote{
+  position: relative;
+    top: 28px;
+}
+
 .quotes-section h2 {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
@@ -395,6 +400,15 @@ header::before {
   font-size: 30px; /* Further adjust font size for smaller screens */
   width: 100%; /* Adjust width for better fit */
 }
+
+.quote{
+  font-size: 14px;
+}
+
+.quotes-section h2{
+  font-size: 28px;
+}
+
 }
 
 @media (max-width: 480px) {
@@ -414,4 +428,18 @@ header::before {
   .timeline-item .timeline-content p {
     font-size: 16px; /* Reduce paragraph font size */
   }
+
+  .typing-animation {
+    font-size: 30px; /* Further adjust font size for smaller screens */
+    width: 100%; /* Adjust width for better fit */
+  }
+  
+  .quote{
+    font-size: 10px;
+  }
+
+  .quotes-section h2{
+    font-size: 28px;
+  }
+  
 }

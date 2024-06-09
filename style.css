@@ -347,6 +347,12 @@ header::before {
     font-size: 40px; /* Reduce font size for smaller screens */
     width: 80%;
   }
+
+  .typing-animation {
+    font-size: 40px; /* Adjust font size for smaller screens */
+    width: 80%; /* Adjust width for better fit */
+  }
+  
 }
 
 /* Timeline section adjustments */
@@ -384,6 +390,11 @@ header::before {
     padding: 20px;
     top: -12px;
 }
+
+.typing-animation {
+  font-size: 30px; /* Further adjust font size for smaller screens */
+  width: 100%; /* Adjust width for better fit */
+}
 }
 
 @media (max-width: 480px) {
@@ -393,7 +404,7 @@ header::before {
   }
 
   .text > p {
-    font-size: 30px; /* Further reduce font size for smaller screens */
+    font-size: 25px; /* Further reduce font size for smaller screens */
   }
 
   .timeline-item .timeline-content h3 {

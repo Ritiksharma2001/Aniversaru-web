@@ -339,3 +339,68 @@ header::before {
 }
 
 
+/* Media queries for responsiveness */
+
+/* Header adjustments */
+@media (max-width: 768px) {
+  .text > p {
+    font-size: 40px; /* Reduce font size for smaller screens */
+    width: 80%;
+  }
+}
+
+/* Timeline section adjustments */
+@media (max-width: 768px) {
+
+  header::before {
+    background-position: center; /* Center the background image */
+  }
+
+
+  .counters{
+    height: 67vh;
+    width: 90%;
+  }
+
+  .timeline-container {
+    flex-direction: column; /* Stack timeline items vertically */
+    height: auto; /* Adjust height for better fit */
+  }
+
+  .timeline-item {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 14px;
+  }
+
+  .timeline-item .timeline-img {
+    position: static; /* Remove absolute positioning */
+    margin: 0 auto 20px; /* Center image and add bottom margin */
+  }
+
+  .timeline-item .timeline-content {
+    width: auto;
+    margin: 9px;
+    padding: 20px;
+    top: -12px;
+}
+}
+
+@media (max-width: 480px) {
+
+  header::before {
+    background-position: center; /* Center the background image */
+  }
+
+  .text > p {
+    font-size: 30px; /* Further reduce font size for smaller screens */
+  }
+
+  .timeline-item .timeline-content h3 {
+    font-size: 20px; /* Reduce heading font size */
+  }
+
+  .timeline-item .timeline-content p {
+    font-size: 16px; /* Reduce paragraph font size */
+  }
+}

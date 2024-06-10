@@ -87,4 +87,21 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    document.body.classList.add('loading');
 
+    window.addEventListener('load', function () {
+        const loadingAnimation = document.getElementById('loading-animation');
+        const minimumTime = 5000; // Minimum display time in milliseconds
+        const loadTime = Date.now() - performance.timing.navigationStart;
+        const delay = Math.max(0, minimumTime - loadTime);
+
+        setTimeout(function () {
+            loadingAnimation.style.opacity = '0';
+            setTimeout(function () {
+                loadingAnimation.style.display = 'none';
+                document.body.classList.remove('loading');
+            }, 1000); // Adjust the timeout as needed for a smooth transition
+        }, delay);
+    });
+});

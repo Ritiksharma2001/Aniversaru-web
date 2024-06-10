@@ -87,18 +87,4 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
 
-    // Show the notification
-    const notification = document.getElementById('notification');
-    notification.style.display = 'block';
-
-    // You can optionally hide the notification after a few seconds
-    setTimeout(() => {
-        notification.style.display = 'none';
-    }, 5000);
-
-    // Submit the form programmatically
-    event.target.submit();
-});
